@@ -1,0 +1,12 @@
+<html>
+<body>
+  <form action="http://127.0.0.1:8081/login" method="POST">
+    User Name: <input type="text" name="user_name">  <br><br>
+    Password: <input type="password" name="password"><br><br>
+  <input type="submit" value="Login"> <br><br>
+   {% if err %}
+     <h2>{{ err }}</h2>
+   {% endif %}
+  </form>
+</body>
+</html>
